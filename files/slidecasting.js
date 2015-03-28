@@ -18,9 +18,9 @@ $(function(){
 	AllSlides = $(".presentation .slide");
 	AllSlides.hide();
 
-	var popcorn = Popcorn( "#myaudio" );
+	var popcorn = Popcorn( "#sc_audio" );
 	$.get("files/time.xml",function(data, res){
-		$("eduvid click",data).each(function(i, val){
+		$("sc_slides click",data).each(function(i, val){
 	
 			SlideTiming[i]= new Array() ;
 			
@@ -45,7 +45,8 @@ $(function(){
 	
 	});
 	
-	popcorn.play();
+  //popcorn.play(); //optional
+
 });
 //},false);
 
